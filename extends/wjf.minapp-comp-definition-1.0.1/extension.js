@@ -1,8 +1,12 @@
 const vscode = require('vscode')
 const wxmlCompletionItemProvider = require('./util/wxmlCompletionItemProvider')
 const wxmlDefinitionProvider = require('./util/wxmlDefinitionProvider')
+const jsonDefinitionProvider = require('./util/jsonDefinitionProvider')
 const documentSelector = [
   { scheme: 'file', language: 'wxml', pattern: '**/*.wxml' },
+]
+const documentSelectorJson = [
+  { scheme: 'file', language: 'json', pattern: '**/*.json' },
 ]
 
 function activate(context) {
@@ -11,6 +15,14 @@ function activate(context) {
     vscode.languages.registerDefinitionProvider(
       documentSelector,
       wxmlDefinitionProvider,
+    ),
+  )
+
+  // 注册json跳转到定义
+  context.subscriptions.push(
+    vscode.languages.registerDefinitionProvider(
+      documentSelectorJson,
+      jsonDefinitionProvider,
     ),
   )
 

@@ -1,3 +1,6 @@
+> Fork from [wjf2016/miniprogram-assistant](https://github.com/wjf2016/miniprogram-assistant)  
+> 在其基础上，增加了 json 文件的跳转
+
 # miniprogram-assistant README
 
 小程序助手，提升微信小程序开发体验

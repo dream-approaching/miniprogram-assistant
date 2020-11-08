@@ -1,18 +1,8 @@
 const path = require('path')
 const fs = require('fs')
+const findRootPath = require('./findRootPath')
 
 const appFile = 'app.json'
-
-function findRootPath(filePath) {
-  const dir = path.dirname(filePath)
-  const files = fs.readdirSync(dir)
-
-  if (files.includes(appFile)) {
-    return dir
-  } else {
-    return findRootPath(dir)
-  }
-}
 
 const findComponentPath = function(doc, componentName) {
   const filePath = doc.fileName
