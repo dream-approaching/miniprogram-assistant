@@ -460,7 +460,7 @@
     "@types/node": "^13.11.0",
     "@types/vscode": "^1.44.0"
   },
-  "displayName": "小程序助手",
+  "displayName": "小程序助手-fork",
   "engines": {
     "vscode": "^1.44.2"
   },
@@ -478,7 +478,7 @@
   ],
   "license": "MIT",
   "main": "./extension.js",
-  "name": "miniprogram-assistant",
+  "name": "miniprogram-assistant-fork",
   "publisher": "wjf",
   "repository": "https://github.com/wjf2016/miniprogram-assistant",
   "scripts": {},
