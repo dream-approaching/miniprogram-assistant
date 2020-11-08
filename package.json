@@ -455,12 +455,13 @@
     "recast": "^0.19.0",
     "resolve": "^1.11.0"
   },
-  "description": "小程序助手，提升微信小程序开发体验",
   "devDependencies": {
     "@types/node": "^13.11.0",
     "@types/vscode": "^1.44.0"
   },
+  "name": "miniprogram-assistant-fork",
   "displayName": "小程序助手-fork",
+  "description": "小程序助手，提升微信小程序开发体验",
   "engines": {
     "vscode": "^1.44.2"
   },
@@ -478,8 +479,7 @@
   ],
   "license": "MIT",
   "main": "./extension.js",
-  "name": "miniprogram-assistant-fork",
-  "publisher": "wjf",
+  "publisher": "longzi",
   "repository": "https://github.com/wjf2016/miniprogram-assistant",
   "scripts": {},
   "version": "0.1.2"
